@@ -35,7 +35,7 @@ header nav .nav-right-section {
 
 nav .nav-right-section a {
     margin-right: 10px;
-    color: #000;
+    color: rgba(0,0,0,.87);
 }
 /**Icono de navegacion*/
 
@@ -53,6 +53,8 @@ nav .nav-right-section .menu-icon {
 nav .nav-right-section img {
     border-radius: 50%;
     margin-left: 10px;
+    width: 32px;
+    height: 32px;
 }
 
 /**Cuerpo principal*/
@@ -92,4 +94,38 @@ main .main-input-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main .main-input input {
+    width: 483px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+    border-color: #dfe1e500;
+}
+
+/**iconos en barra de busqueda*/
+
+main .main-input .search-icon {
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_640.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+main .main-input .micro-icon {
+    background-image: url("https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
 }
