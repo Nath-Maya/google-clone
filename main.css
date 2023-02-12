@@ -46,6 +46,7 @@ nav .nav-right-section .menu-icon {
     background-size: contain;
     width: 25px;
     height: 25px;
+    cursor: pointer;   
 }
 
 /**Foto de perfil*/
@@ -117,6 +118,7 @@ main .main-input .search-icon {
     background-size: contain;
     width: 24px;
     height: 24px;
+    cursor: pointer;   
 }
 
 main .main-input .micro-icon {
@@ -126,6 +128,79 @@ main .main-input .micro-icon {
     background-size: contain;
     width: 20px;
     height: 20px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
+
+/**Aplicando estilos a botones */
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 2.25rem;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius:4px;
+    margin: 11px 4px;
+    padding: 0 15px;
+    font-size: 0.875rem;
+    color: #3c4043;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #dadce0 ;
+    color: #202124;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1); 
+}
+
+/* *FOOTER */
+
+footer {
+    width: 100%;
+    height: 5.8rem;
+    position: absolute;
+    bottom: 0;
+    background-color:#f2f2f2;
+    border-top: 1px solid #e4e4e4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    font-size: 0.875rem;
+}
+
+footer ul {
+    padding-left: 0;
+    margin: 0.62rem;
+    list-style: none;
+    display: flex;
+}
+
+footer .footer-left {
+    justify-content: left;
+}
+
+footer .footer-right {
+    justify-content: right;
+}
+
+footer .item-footer {
+    margin: 0.625rem;
+    text-align: center;
+}
+
+footer .footer-link {
+    color: #70757a;
+}
+
+footer .footer-link:hover {
+    text-decoration: underline;
+}
+
